@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+    .ein{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+        
+    .zwei{
+        background-color: magenta;
+        flex: 1;
+        margin: 50px;
+        padding: 15px;
+        border: 5px solid black;
+        width: 300px;
+        
+    }
+    .drei{
+        flex:1;
+        background-color:lightpink ;
+        margin: auto;
+        padding:10px;
+        border-style: inset;
+        border: 4px solid lightgrey;
+        border-radius: 10px;
+
+    }
+    li{
+        flex: 1;
+        display: inline;
+    }
+    a{
+        text-decoration: none;
+        margin: 5px;
+        border-radius: inset;
+        color:blue;
+        background-color: lightpink;
+        width: 150px;
+    }
+    a:hover{
+        background-color:lightgreen;
+        color:darkgreen;
+        padding: 10px 20px;
+        border-radius: 24px;
+    }
+    .xx{
+        
+         color:red ;
+    }
+    .aa1{
+        color: black;
+    }
+    .oo{
+        color: chartreuse;
+    }
+            
+ 
+
+    @media( max-width:580px){
+        body{
+            background-color: mediumaquamarine;
+            
+        }
+        a{
+            display: none;
+        }
+        div{
+            flex-direction: column;
+        }
+    }
+    body{
+            background-color: mediumvioletred;
+        }
+       
+</style>
+<body> 
+    <ul class="ein">
+        <div  class="drei">
+          <h2> Das bin ich</h2>
+        </div>
+        <div>
+            <li>
+                <a  href="#">Home</a
+                >
+            </li>
+            <li>
+                <a  href="#aboutme">Über mich</a>
+            </li>
+            <li>
+                <a href="https://www.google.com">Kontakt</a>
+            </li>
+        </div>
+    </ul>
+    <div class="ein" id="aboutme">
+       <div class="zwei"><h1 class="aa1">Hi,ich bin Marina</h1>
+        <h2  class="xx">Ich wohne in Hamburg</h2>
+        <h2>Ich bin Webdesignerin</h2>
+       <h2 class="oo">Ich möche gerne lehren und etwas neues ausprobieren</h2>
+      
+       
+    </div>
+       <img class="zwei" src="https://th.bing.com/th/id/OIP.T8S0RDqJr0Fe6sEa_5J84QHaFT?w=234&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="bild">
+    </div>
+</body>
+</html>
